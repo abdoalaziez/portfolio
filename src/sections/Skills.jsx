@@ -34,7 +34,7 @@ const Skills = () => {
     },
     {
       SkillName: "Responsive Design",
-      SkillLevel: 70,
+      SkillLevel: 80,
       Description: "Creating web designs that look great on any device.",
       Icon: FaMobileAlt,
       Color: "text-green-500",
@@ -48,7 +48,7 @@ const Skills = () => {
     },
     {
       SkillName: "TailwindCSS",
-      SkillLevel: 70,
+      SkillLevel: 75,
       Description: "A utility-first CSS framework for rapid UI development.",
       Icon: SiTailwindcss,
       Color: "text-teal-500",
@@ -58,28 +58,28 @@ const Skills = () => {
   const backendSkills = [
     {
       SkillName: "Node.js",
-      SkillLevel: 80,
+      SkillLevel: 60,
       Description: "JavaScript runtime for building server-side applications.",
       Icon: FaNodeJs,
       Color: "text-green-600",
     },
     {
       SkillName: "MongoDB",
-      SkillLevel: 75,
+      SkillLevel: 60,
       Description: "A NoSQL database for modern web applications.",
       Icon: SiMongodb,
       Color: "text-green-500",
     },
     {
-      SkillName: "SQL",
-      SkillLevel: 70,
+      SkillName: "MySQL",
+      SkillLevel: 60,
       Description: "Managing relational databases efficiently.",
       Icon: SiPostgresql,
       Color: "text-blue-700",
     },
     {
       SkillName: "Express",
-      SkillLevel: 70,
+      SkillLevel: 65,
       Description: "A lightweight framework for building APIs and web apps.",
       Icon: SiExpress,
       Color: "text-gray-500",
@@ -165,7 +165,7 @@ const Skills = () => {
                   ></div>
                 </div>
                 <p className="mt-2 text-sm font-medium text-gray-600">
-                  {skill.SkillLevel}% Proficiency
+                  {skill.SkillLevel}% 
                 </p>
               </div>
             ))}
@@ -194,7 +194,7 @@ const Skills = () => {
                   ></div>
                 </div>
                 <p className="mt-2 text-sm font-medium text-gray-600">
-                  {skill.SkillLevel}% Proficiency
+                  {skill.SkillLevel}% 
                 </p>
               </div>
             ))}
@@ -223,7 +223,7 @@ const Skills = () => {
                   ></div>
                 </div>
                 <p className="mt-2 text-sm font-medium text-gray-600">
-                  {skill.SkillLevel}% Proficiency
+                  {skill.SkillLevel}% 
                 </p>
               </div>
             ))}
