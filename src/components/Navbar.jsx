@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import { MdHomeFilled, MdMedicalServices, MdContactPhone } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
 import { FaRProject, FaRegUser } from "react-icons/fa";
@@ -10,15 +10,7 @@ const Navbar = () => {
   return (
     <header className="bg-white z-20 fixed left-0 right-0 shadow-md">
       <nav className="bg-gray-300 flex items-center justify-between h-[60px] px-4 md:px-8">
-        <h1 className="text-3xl font-bold">
-          <Typewriter
-            options={{
-              strings: ["U A Z"],
-              autoStart: true,
-              loop: true,
-            }}
-          />
-        </h1>
+        <button className="bg-gradient-to-r ml-3 from-green-500 to-green-700 text-white py-3 px-8 rounded-md shadow-lg inline-block hover:from-green-600 hover:to-green-800 hover:scale-105 transition-all focus:ring-4 focus:ring-green-300 focus:ring-offset-2 outline-none font-semibold">U M R A N </button>
         <button
           aria-label="Toggle navigation menu"
           className="md:hidden text-gray-700 focus:outline-none"
@@ -42,7 +34,7 @@ const Navbar = () => {
         <ul
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } absolute top-[60px] left-0 w-full bg-gray-300 md:static md:flex md:items-center md:space-x-6 md:w-auto transition-all duration-300 ease-in-out`}
+          } absolute top-[60px] left-0 w-full bg-gray-300 md:static md:flex md:items-center md:space-x-6  md:w-auto transition-all duration-300 ease-in-out`}
         >
           {[
             { icon: MdHomeFilled, label: "Home", href: "#home" },
@@ -52,11 +44,11 @@ const Navbar = () => {
             { icon: FaRProject, label: "My Projects", href: "#MyProject" },
             { icon: MdContactPhone, label: "Contact Me", href: "#contact-me" },
           ].map(({ icon: Icon, label, href }) => (
-            <li key={label} className="border-b md:border-none font-bold flex items-center">
+                       <li key={label} className="border-b md:border-none font-bold flex items-center">
               <Icon className="text-2xl text-gray-700 mr-2" />
               <a
                 href={href}
-                className="block px-4 py-2 md:px-6 text-gray-700 rounded-lg hover:bg-gray-400 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-500 active:bg-blue-800 transition duration-300 ease-in-out"
+                className="block px-4 py-2 md:px-6 text-gray-700 rounded-lg hover:bg-green-800 hover:text-white focus:outline-none focus:ring-4 focus:ring-green-500 active:bg-green-800 transition duration-300 ease-in-out"
               >
                 {label}
               </a>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import vite from "../assets/vite.jpeg";
@@ -47,7 +47,7 @@ const ContactMe = () => {
         <div className="text-center">
         </div>
         <div className="relative mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <form onSubmit={handleSubmit} className="bg-white/20 p-6 md:p-8 shadow-lg rounded-lg">
+          <form onSubmit={handleSubmit} className="max-w-5xl  bg-[#2e0249]/15 p-6 md:p-8 shadow-lg rounded-lg">
           <h2 className="text-3xl md:text-4xl font-bold text-center">Get in Touch</h2>
             <div className="mb-4">
               <label htmlFor="name" className="block text-black font-medium">
@@ -153,32 +153,10 @@ const ContactMe = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.youtube.com/c/yourchannel"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-red-600 hover:text-red-800 transition duration-300"
-                >
-                  <FontAwesomeIcon icon={faYoutube} size="2x" />
-                </a>
+               
               </li>
             </ul>
-            <div className="flex justify-center mt-8">
-              <a
-                href="mailto:your-email@example.com"
-                className="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-all"
-              >
-                Email Me
-              </a>
-              <a
-                href="https://wa.me/yourphonenumber"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-4 bg-green-600 text-white py-3 px-6 rounded-md hover:bg-green-700 transition-all"
-              >
-                Message on WhatsApp
-              </a>
-            </div>
+              
           </div>
         </div>
         {status && (
@@ -198,3 +176,7 @@ const ContactMe = () => {
 };
 
 export default ContactMe;
+
+
+
+

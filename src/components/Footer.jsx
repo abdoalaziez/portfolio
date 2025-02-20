@@ -26,7 +26,6 @@ const Footer = () => {
         color: '#333',
       }}
     >
-      <h2 className="text-3xl font-bold text-white">Contact_</h2>
       <div className="flex flex-wrap justify-center gap-6 text-3xl mt-4">
         <a
           href="https://www.linkedin.com"
@@ -101,7 +100,7 @@ const Footer = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 md:bottom-10 md:right-10 bg-blue-500 text-white font-bold py-2 px-4 md:py-3 md:px-6 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+          className="bg-gradient-to-r from-green-500 to-green-700 text-white py-3 px-8 rounded-md shadow-lg mt-6 inline-block hover:from-green-600 hover:to-green-800    bg-white fixed bottom-5 right-5 md:bottom-10 md:right-10 font-bold  md:py-3 md:px-6  hover:bg-green-700 hover:text-white focus:ring-4 focus:ring-white focus:ring-offset-2 outline-none transition-all transform hover:scale-110"
         >
           Go to Top
         </button>
